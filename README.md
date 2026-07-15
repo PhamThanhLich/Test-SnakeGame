@@ -1,53 +1,43 @@
-# Flappy Bird Project
+# Snake Game
 
-Đây là một dự án game Flappy Bird được xây dựng bằng Python và thư viện Pygame.
+A simple Snake game built with Pygame.
 
-## Mục tiêu dự án
+## Overview
 
-- Học cách làm game 2D cơ bản với Python
-- Tìm hiểu về xử lý sự kiện, vật lý đơn giản và va chạm
-- Tạo một trò chơi có thể chạy được trên máy tính cá nhân
+This project contains a playable Snake game implemented in Python using the Pygame library. The game logic is in `SnakeGame/main.py`.
 
-## Tính năng hiện có
+## Run
 
-- Cửa sổ game cơ bản
-- Chim có thể nhảy bằng phím Space
-- Ống nước di chuyển từ phải sang trái
-- Tính điểm khi chim vượt qua ống
-- Hiển thị màn hình Game Over và có thể chơi lại
+1. Install Python 3.8+ and Pygame:
 
-## Yêu cầu hệ thống
+```bash
+pip install pygame
+```
 
-- Python 3.8 trở lên
-- Pygame
+2. Run the game from the project root:
 
-## Cài đặt
+```bash
+python SnakeGame/main.py
+```
 
-1. Cài đặt Python từ trang chính thức
-2. Cài đặt thư viện Pygame:
-   ```bash
-   pip install pygame
-   ```
-3. Chạy game:
-   ```bash
-   python main.py
-   ```
+## Controls
 
-## Cách chơi
+- Arrow keys or WASD to move the snake
+- Space to pause/resume
+- Space (when paused at Game Over) to restart
 
-- Nhấn Space để chim bay lên
-- Tránh va chạm với các ống nước
-- Vượt qua càng nhiều ống càng được nhiều điểm
-- Nếu thua, nhấn Space để chơi lại
+## Game features
 
-## Cấu trúc thư mục
+- Grid-based snake movement
+- Apple spawning and score tracking
+- Self-collision and wall collision detection
+- Simple Game Over screen and restart
 
-- main.py: file chính chứa logic game
-- background.png: ảnh nền
-- bird.png: ảnh chim
-- run.bat: file chạy nhanh trên Windows
+## File structure
 
-## Ghi chú
+- `SnakeGame/main.py` — main game code
 
-- Dự án này phù hợp cho người mới học lập trình game bằng Python
-- Bạn có thể tiếp tục mở rộng thêm âm thanh, hiệu ứng, giao diện đẹp hơn hoặc chế độ khó hơn
+## Notes
+
+- Designed for learning and quick experimentation.
+- Feel free to open issues or PRs if you want to improve the game.
